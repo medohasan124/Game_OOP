@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fight</title>
+</head>
+<body>
+
+	<style>
+		.body .person{
+			display: inline-block;
+		    height: 300px;
+		   border: 1px solid #333;
+		    margin: 100px 100px 0 180px;
+		}
+
+		.body .person .buttons{
+			    margin: 11px;
+    text-align: center;
+		}
+
+		.brogress{
+			display: block;
+		    width: 100%;
+		    height: 10px;
+		    margin-bottom: 13px;
+		    background: green;
+		}
+
+		.start{
+			    text-align: center;
+			    background: #eee;
+			    height: 100vh;
+			    position: absolute;
+			    z-index: 5;
+			    width: 100%;
+		}
+
+		.startButton{
+		    background: #bf0505;
+		    color: #fff;
+		    padding: 22px;
+		    border-radius: 8px;
+		}
+	</style>
+
+	<div class='body'>
+
+		<div class='start'>
+			<button class='startButton' onclick="start()">مستعد يا بطل </button>
+		</div>
+		
+		<div class='person 'id='naroto'>
+			<div class='brogress' style=''></div>
+			<img src="naroto.jpg">
+			<div class='buttons'>
+				<button class='box' onclick="naroto.box()">box</button>
+				<button class='health' onclick="naroto.healthy()">health</button>
+				<button hidden class='finish' onclick="naroto.finishHim()">finish</button>
+			</div>
+			
+		</div>
+
+		<div class='person'id='saski'>
+			<div class='brogress' style=''></div>
+			<img src="saski.jpg">
+			<div class='buttons'>
+				<button class='box' onclick="susaki.box()">box</button>
+				<button class='health' onclick="susaki.healthy()">health</button>
+				<button hidden class='finish' onclick="susaki.finishHim()">finish</button>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<script  src='person.js'></script>
+	<script  src='main.js'></script>
+
+
+</body>
+</html>
